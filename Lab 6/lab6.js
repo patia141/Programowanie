@@ -136,7 +136,7 @@ function PorownajFigury(f1, f2) {
     }
 } */
 
-PorownajFigury(t2. p2);
+//PorownajFigury(t2. p2);
 
 //zad 5
 function WiekszyObwod(prost1, prost2) {
