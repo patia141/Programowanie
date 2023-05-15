@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Lab 7 - zad 1</title>
+</head>
+<body>
+    <style>
+        form{
+            width: 500px;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid black;
+            justify-content: center;
+        }
+    </style>
+    <form>
+
+        <div class="control">
+            <label>Imię: </label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="control">
+            <label>Nazwisko: </label>
+            <input type="text" name="surname" required>
+        </div>
+        
+        <div class="control">
+            <label>Email: </label>
+            <input type="email" name="email" required>
+        </div>
+        
+        <div class="control">
+            <label>Hasło: </label>
+            <input type="text" name="password" minlength="8" required>
+        </div>
+
+        <div class="control">
+            <label>Płeć: </label>
+            <div>
+                <input type="radio" id="m" name="sex" value="m" required>
+                <label for="m">M</label>
+                <input type="radio" id="k" name="sex" value="k" required>
+                <label for="k">K</label>
+            </div>
+        </div>
+
+        <div class="control">
+            <label>Telefon: </label>
+            <input type="tel" name="phone" minlength="9" maxlength="12" required>
+        </div>
+
+        <div class="control">
+            <label>Data urodzenia: </label>
+            <input type="date" name="birthDate" required>
+        </div>
+
+        <div class="control">
+            <label>Kraj: </label>
+            <select name="country" required>
+                <option></option>
+                <option value="Polska">Polska</option>
+                <option value="Ukraina">Ukraina</option>
+                <option value="Litwa">Litwa</option>
+                <option value="Niemcy">Niemcy</option>
+            </select>
+        </div>
+
+        <div class="control actions">
+            <input type="submit" value="Zapisz">
+        </div>
+    </form>
+</body>
+</html>
