@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lab9.js"></script>
+    <title>Lab9</title>
+</head>
+<body>
+    <style>
+        form{
+            width: 500px;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid maroon;
+            justify-content: center;
+
+            .control {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            }
+
+            .actions {
+            justify-content: center;
+            }
+        }
+
+        h3{
+            text-align: center;
+        }
+    </style>
+
+    <h3>Logowanie</h3>
+    <form class="form" name="zad1" method="post" novalidate>
+        <div class="control">
+            <label>Login</label>
+            <input type="text" name="login" required>
+            <span class="error"></span>
+        </div>
+
+        <div class="control">
+            <label>Hasło</label>
+            <input type="text" name="password" minlength="8" required>
+            <span class="error"></span>
+        </div>
+
+        <div class="control">
+            <label hidden>Powtórz hasło</label>
+            <input type="text" name="repeat_password" minlength="8" hidden>
+        </div>
+
+        <div class="control actions">
+            <button name="sign_in">Zaloguj</button>
+        </div>
+
+        <div class="control actions">
+            <button name="sign_up">Zarejestruj</button>
+        </div>
+    </form>
+
+    <h3>Wprowadzanie danych</h3>
+
+    <form class="form" name="zad2" method="post" novalidate>
+        <div class="control">
+            <label>Imię</label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="control">
+            <label>Nazwisko</label>
+            <input type="text" name="surname" required>
+        </div>
+
+        <div class="control">
+            <label>Mail</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="control">
+            <label>Wiek</label>
+            <input type="number" name="age" min="18" required>
+        </div>
+
+        <div class="control">
+            <label>Płeć</label>
+            <div>
+                <input type="radio" id="m" name="sex" value="m">
+                <label for="m">Mężczyzna</label>
+                <input type="radio" id="k" name="sex" value="k">
+                <label for="k">Kobieta</label>
+            </div>
+        </div>
+
+        <div class="control">
+            <label>Telefon</label>
+            <input type="number" name="phone" required>
+        </div>
+    </form>
+
+    <h3>Kalkulator</h3>
+    <form type="form" name="kalkulator" novalidate>
+        <div class="control">
+            <label>Twoje wynagrodzenie</label>
+            <input type="number" name="placa">
+        </div>
+
+        <div class="control">
+            <label>Wybierz co chcesz obliczyć:</label>
+            <select>
+                <option value="net_na_br">Obliczyć z netto na brutto</option>
+                <option value="br_na_net">Obliczyć z brutto na netto</option>
+            </select>
+        </div>
+    </form>
+
+    
+</body>
+</html>
